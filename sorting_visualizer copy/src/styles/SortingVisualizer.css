@@ -1,0 +1,128 @@
+.controls-section {
+  grid-column: 1 / 7;
+  grid-row: 3 / 5;
+  padding: 32px 32px 28px 32px;
+  position: relative;
+  background: var(--bg-box);
+  border-radius: 24px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.04);
+  border: 1.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 320px;
+  transition: box-shadow 0.3s, border 0.3s, background 0.3s;
+}
+
+.controls-section:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
+  border-color: var(--gradient-start);
+}
+
+.controls-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  gap: 32px;
+}
+
+.algorithm-selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 14rem;
+}
+
+.algorithm-selector select {
+  font-size: 1rem;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1.5px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.controls-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.size-speed-controls {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.control-label {
+  font-weight: 600;
+  min-width: 60px;
+  font-size: 1rem;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--glass-bg);
+  border-radius: 20px;
+  padding: 6px 10px;
+  border: 1.5px solid var(--glass-border);
+}
+
+.control-value {
+  font-weight: 600;
+  width: 34px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn-control {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+  .controls-section {
+    padding: 18px 8px 16px 8px;
+    border-radius: 16px;
+    min-height: 220px;
+  }
+  .controls-panel {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .algorithm-selectors {
+    width: 100%;
+    gap: 10px;
+  }
+  .controls-right {
+    gap: 12px;
+  }
+  .action-buttons {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .size-speed-controls {
+    gap: 10px;
+  }
+} 

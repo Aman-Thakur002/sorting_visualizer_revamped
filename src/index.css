@@ -1,0 +1,58 @@
+:root {
+  /* Light theme */
+  --bg-main-light: #f0f4f8;
+  --bg-box-light: #ffffff;
+  --text-color-light: #1f2937;
+  --border-light: #e5e7eb;
+  
+  /* Dark theme */
+  --bg-main-dark: #121212;
+  --bg-box-dark: #1e1e1e;
+  --text-color-dark: #e2e8f0;
+  --border-dark: #2d3748;
+  
+  /* Common */
+  --radius: 12px;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.3);
+  
+  /* Algorithm colors */
+  --color-unsorted: #9CB4CC;
+  --color-sorted: mediumspringgreen;
+  --color-compare: crimson;
+  --color-selected: blueviolet;
+  --color-left: gold;
+  --color-right: orangered;
+}
+
+body.light-theme {
+  --bg-main: var(--bg-main-light);
+  --bg-box: var(--bg-box-light);
+  --text-color: var(--text-color-light);
+  --border: var(--border-light);
+  --shadow: var(--shadow-light);
+}
+
+body.dark-theme {
+  --bg-main: var(--bg-main-dark);
+  --bg-box: var(--bg-box-dark);
+  --text-color: var(--text-color-dark);
+  --border: var(--border-dark);
+  --shadow: var(--shadow-dark);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+   overflow : hidden;
+}
