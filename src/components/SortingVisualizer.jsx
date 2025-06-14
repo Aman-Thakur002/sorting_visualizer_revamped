@@ -29,7 +29,7 @@ const RIGHT = "orangered";
 
 // Configuration constants
 const MIN_SIZE = 2;
-const MAX_SIZE = 16;
+const MAX_SIZE = 13;
 const DEFAULT_SIZE = 8;
 const MIN_SPEED = 1;
 const MAX_SPEED = 5;

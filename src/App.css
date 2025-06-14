@@ -1,6 +1,8 @@
 .app-container {
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .theme-toggle-btn {
@@ -18,4 +20,18 @@
   font-size: 20px;
   cursor: pointer;
   z-index: 100;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle-btn {
+    top: 4px;
+    right: 4px;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
 }

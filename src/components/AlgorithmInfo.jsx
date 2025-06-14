@@ -281,11 +281,11 @@ const AlgorithmInfo = ({
 
       {/* Algorithm Description & Advantages/Disadvantages */}
       <section className="algorithm-details">
-        <h4>Description</h4>
-        <p className="algorithm-description">{ALGORITHMS[selectedAlgorithm].description}</p>
-
         {!comparisonMode && (
           <>
+            <h4>Description</h4>
+            <p className="algorithm-description">{ALGORITHMS[selectedAlgorithm].description}</p>
+
             <h4>Advantages</h4>
             <ul className="algorithm-list">
               {ALGORITHMS[selectedAlgorithm].advantages.map((adv, i) => <li key={i}>{adv}</li>)}
