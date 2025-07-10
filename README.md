@@ -8,6 +8,7 @@
   <a href="#-features"><img src="https://img.shields.io/badge/Features-6+-purple?style=flat-square" alt="Features"/></a>
   <a href="#-tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-React%20%7C%20Vite%20%7C%20CSS3-blue?style=flat-square" alt="Tech Stack"/></a>
   <a href="#-license"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/></a>
+  <a href ="https://sorting-visualizer-amd.vercel.app/">Demo</a>
 </p>
 
 ---
