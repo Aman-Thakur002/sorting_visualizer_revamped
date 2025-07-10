@@ -1,7 +1,7 @@
 # 🚀 Sorting Visualizer
 
 <p align="center">
-  <img src="./public/s1.png" alt="Sorting Visualizer Banner" width="80%"/>
+  <img src="./public/favicon.png" alt="Sorting Visualizer Banner" width="80%"/>
 </p>
 
 <p align="center">
@@ -31,11 +31,11 @@
 
 **Single Algorithm Mode**
 
-<img src="./s1.png" alt="Single Algorithm Mode" width="80%"/>
+<img src="./public/s1.png" alt="Single Algorithm Mode" width="80%"/>
 
 **Compare Mode**
 
-<img src="./s2.png" alt="Compare Mode" width="80%"/>
+<img src="./public/s2.png" alt="Compare Mode" width="80%"/>
 
 </div>
 
