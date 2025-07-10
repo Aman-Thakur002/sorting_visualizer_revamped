@@ -19,10 +19,10 @@ A beautiful, interactive web app to visualize and compare popular sorting algori
 ## 📸 Screenshots
 
 ### Single Algorithm Mode
-![Single Algorithm Mode](./Screenshot%202025-07-11%20at%201.51.30%E2%80%AFAM.png)
+![Single Algorithm Mode](./s1.png)
 
 ### Compare Mode
-![Compare Mode](./Screenshot%202025-07-11%20at%201.52.16%E2%80%AFAM.png)
+![Compare Mode](./s2.png)
 
 ---
 
