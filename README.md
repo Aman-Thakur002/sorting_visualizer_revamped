@@ -1,12 +1,77 @@
-# React + Vite
+# Sorting Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, interactive web app to visualize and compare popular sorting algorithms in real time. Built with React and Vite, supporting both light and dark themes, and fully responsive for desktop and mobile.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- **Visualize** Bubble, Selection, Insertion, Merge, Quick, and Heap Sort
+- **Compare** two algorithms side-by-side
+- **Step-by-step** animation with color-coded states
+- **Metrics**: See comparisons and swaps in real time
+- **Algorithm info**: Complexity, stability, pros/cons, and more
+- **Code viewer**: See and copy JS, C++, and Python implementations
+- **Dark/Light mode** toggle
+- **Responsive**: Works great on mobile and desktop
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+
+> _Add your screenshots here!_
+
+![Sorting Visualizer Screenshot](./public/vite.svg)
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo:**
+   ```sh
+   git clone https://github.com/your-username/sorting-visualizer.git
+   cd sorting-visualizer
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Run in development:**
+   ```sh
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+4. **Build for production:**
+   ```sh
+   npm run build
+   ```
+5. **Preview production build:**
+   ```sh
+   npm run preview
+   ```
+
+---
+
+## 🛠️ Tech Stack
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## 📚 Learn More
+- [Sorting Algorithms (GeeksforGeeks)](https://www.geeksforgeeks.org/sorting-algorithms/)
+- [React Documentation](https://react.dev/)
+- [Vite Documentation](https://vitejs.dev/)
+
+---
+
+## 🙏 Credits
+- Inspired by classic sorting visualizer projects and the open-source community.
+- Icons by [React Icons](https://react-icons.github.io/react-icons/).
+
+---
+
+## 📄 License
+MIT
