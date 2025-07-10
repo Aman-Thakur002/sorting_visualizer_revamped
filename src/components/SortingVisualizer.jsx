@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "../styles/SortingVisualizer.css";
 import { algorithmInfo } from "../data/algorithmInfo";
+import { FiMoon, FiSun } from "react-icons/fi";
 import {
   bubbleSort,
   selectionSort,
@@ -42,11 +43,32 @@ const ALGO_KEY_MAP = {
   "Selection Sort": "selectionSort",
   "Insertion Sort": "insertionSort",
   "Merge Sort": "mergeSort",
-  "Quicksort": "quickSort",
-  "Heapsort": "heapSort",
+  Quicksort: "quickSort",
+  Heapsort: "heapSort",
 };
 
 const SortingVisualizer = () => {
+
+  const [theme, setTheme] = useState("light-theme");
+  useEffect(() => {
+    // Check for saved theme preference or use system preference
+    const savedTheme =
+      localStorage.getItem("theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark-theme"
+        : "light-theme");
+
+    setTheme(savedTheme);
+    document.body.className = savedTheme;
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light-theme" ? "dark-theme" : "light-theme";
+    setTheme(newTheme);
+    document.body.className = newTheme;
+    localStorage.setItem("theme", newTheme);
+  };
+
   // State for the main array and its visualization
   const [array, setArray] = useState([]);
   const [array2, setArray2] = useState([]); // Second array for comparison mode
@@ -388,6 +410,14 @@ const SortingVisualizer = () => {
         <h1 className="visualizer-title">Sorting Visualizer</h1>
       </div>
 
+      <button
+            className="theme-toggle-btn"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {theme === "light-theme" ? <FiMoon /> : <FiSun color="white" />}
+          </button>
+
       <div className="bento-grid">
         {/* Array Visualization Section */}
         <div className="bento-section array-section">
@@ -643,7 +673,9 @@ const SortingVisualizer = () => {
         {/* Algorithm Info Section */}
         <div className="bento-section info-section">
           <AlgorithmInfo
-            selectedAlgorithm={ALGO_KEY_MAP[compareMode ? algo1 : selectedAlgorithm]}
+            selectedAlgorithm={
+              ALGO_KEY_MAP[compareMode ? algo1 : selectedAlgorithm]
+            }
             comparisonAlgorithm={ALGO_KEY_MAP[algo2]}
             comparisonMode={compareMode}
             metrics={metrics}
@@ -668,7 +700,9 @@ const SortingVisualizer = () => {
                 <div className="procedure">
                   <ol className="procedure-steps">
                     {algorithmInfo[algo1]?.procedure.map((step, idx) => (
-                      <li key={idx} className="procedure-step">{step}</li>
+                      <li key={idx} className="procedure-step">
+                        {step}
+                      </li>
                     ))}
                   </ol>
                 </div>
@@ -680,7 +714,9 @@ const SortingVisualizer = () => {
                     js
                   </button>
                   <button
-                    className={`code-tab ${activeTab === "cpp" ? "active" : ""}`}
+                    className={`code-tab ${
+                      activeTab === "cpp" ? "active" : ""
+                    }`}
                     onClick={() => setActiveTab("cpp")}
                   >
                     c++
@@ -692,8 +728,14 @@ const SortingVisualizer = () => {
                     py
                   </button>
                 </div>
-                <div className="code-content" style={{ height: "auto", overflow: "visible" }}>
-                  <div className="code-block" style={{ height: "auto", minHeight: "350px" }}>
+                <div
+                  className="code-content"
+                  style={{ height: "auto", overflow: "visible" }}
+                >
+                  <div
+                    className="code-block"
+                    style={{ height: "auto", minHeight: "350px" }}
+                  >
                     <div className="code-block-header">
                       <div className="code-block-dots">
                         <div className="code-block-dot"></div>
@@ -701,19 +743,38 @@ const SortingVisualizer = () => {
                         <div className="code-block-dot"></div>
                       </div>
                       <div className="code-block-title">
-                        {algo1}.{activeTab === "js" ? "js" : activeTab === "cpp" ? "cpp" : "py"}
+                        {algo1}.
+                        {activeTab === "js"
+                          ? "js"
+                          : activeTab === "cpp"
+                          ? "cpp"
+                          : "py"}
                       </div>
                     </div>
-                    <button className="copy-btn" onClick={() => { navigator.clipboard.writeText(algorithmInfo[algo1]?.code[activeTab] || ""); }}>
+                    <button
+                      className="copy-btn"
+                      onClick={() => {
+                        navigator.clipboard.writeText(
+                          algorithmInfo[algo1]?.code[activeTab] || ""
+                        );
+                      }}
+                    >
                       <FiCopy className="copy-tooltip" />
                     </button>
                     <pre style={{ height: "auto" }}>
-                      {(algorithmInfo[algo1]?.code[activeTab] || "").split("\n").map((line, idx) => (
-                        <div key={idx} className={`code-line ${currentLine === idx ? "highlighted" : ""}`}>
-                          <span className="code-line-number">{idx + 1}</span>
-                          <span className="code-line-content">{line}</span>
-                        </div>
-                      ))}
+                      {(algorithmInfo[algo1]?.code[activeTab] || "")
+                        .split("\n")
+                        .map((line, idx) => (
+                          <div
+                            key={idx}
+                            className={`code-line ${
+                              currentLine === idx ? "highlighted" : ""
+                            }`}
+                          >
+                            <span className="code-line-number">{idx + 1}</span>
+                            <span className="code-line-content">{line}</span>
+                          </div>
+                        ))}
                     </pre>
                   </div>
                 </div>
@@ -725,7 +786,9 @@ const SortingVisualizer = () => {
                 <div className="procedure">
                   <ol className="procedure-steps">
                     {algorithmInfo[algo2]?.procedure.map((step, idx) => (
-                      <li key={idx} className="procedure-step">{step}</li>
+                      <li key={idx} className="procedure-step">
+                        {step}
+                      </li>
                     ))}
                   </ol>
                 </div>
@@ -737,7 +800,9 @@ const SortingVisualizer = () => {
                     js
                   </button>
                   <button
-                    className={`code-tab ${activeTab === "cpp" ? "active" : ""}`}
+                    className={`code-tab ${
+                      activeTab === "cpp" ? "active" : ""
+                    }`}
                     onClick={() => setActiveTab("cpp")}
                   >
                     c++
@@ -749,8 +814,14 @@ const SortingVisualizer = () => {
                     py
                   </button>
                 </div>
-                <div className="code-content" style={{ height: "auto", overflow: "visible" }}>
-                  <div className="code-block" style={{ height: "auto", minHeight: "350px" }}>
+                <div
+                  className="code-content"
+                  style={{ height: "auto", overflow: "visible" }}
+                >
+                  <div
+                    className="code-block"
+                    style={{ height: "auto", minHeight: "350px" }}
+                  >
                     <div className="code-block-header">
                       <div className="code-block-dots">
                         <div className="code-block-dot"></div>
@@ -758,19 +829,33 @@ const SortingVisualizer = () => {
                         <div className="code-block-dot"></div>
                       </div>
                       <div className="code-block-title">
-                        {algo2}.{activeTab === "js" ? "js" : activeTab === "cpp" ? "cpp" : "py"}
+                        {algo2}.
+                        {activeTab === "js"
+                          ? "js"
+                          : activeTab === "cpp"
+                          ? "cpp"
+                          : "py"}
                       </div>
                     </div>
-                    <button className="copy-btn" onClick={() => { navigator.clipboard.writeText(algorithmInfo[algo2]?.code[activeTab] || ""); }}>
-                      <FiCopy className="copy-tooltip"/>
+                    <button
+                      className="copy-btn"
+                      onClick={() => {
+                        navigator.clipboard.writeText(
+                          algorithmInfo[algo2]?.code[activeTab] || ""
+                        );
+                      }}
+                    >
+                      <FiCopy className="copy-tooltip" />
                     </button>
                     <pre style={{ height: "auto" }}>
-                      {(algorithmInfo[algo2]?.code[activeTab] || "").split("\n").map((line, idx) => (
-                        <div key={idx} className="code-line">
-                          <span className="code-line-number">{idx + 1}</span>
-                          <span className="code-line-content">{line}</span>
-                        </div>
-                      ))}
+                      {(algorithmInfo[algo2]?.code[activeTab] || "")
+                        .split("\n")
+                        .map((line, idx) => (
+                          <div key={idx} className="code-line">
+                            <span className="code-line-number">{idx + 1}</span>
+                            <span className="code-line-content">{line}</span>
+                          </div>
+                        ))}
                     </pre>
                   </div>
                 </div>
@@ -812,8 +897,14 @@ const SortingVisualizer = () => {
                 </button>
               </div>
 
-              <div className="code-content" style={{ height: "auto", overflow: "visible" }}>
-                <div className="code-block" style={{ height: "auto", minHeight: "350px" }}>
+              <div
+                className="code-content"
+                style={{ height: "auto", overflow: "visible" }}
+              >
+                <div
+                  className="code-block"
+                  style={{ height: "auto", minHeight: "350px" }}
+                >
                   <div className="code-block-header">
                     <div className="code-block-dots">
                       <div className="code-block-dot"></div>
