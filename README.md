@@ -18,9 +18,11 @@ A beautiful, interactive web app to visualize and compare popular sorting algori
 
 ## 📸 Screenshots
 
-> _Add your screenshots here!_
+### Single Algorithm Mode
+![Single Algorithm Mode](./Screenshot%202025-07-11%20at%201.51.30%E2%80%AFAM.png)
 
-![Sorting Visualizer Screenshot](./public/vite.svg)
+### Compare Mode
+![Compare Mode](./Screenshot%202025-07-11%20at%201.52.16%E2%80%AFAM.png)
 
 ---
 
