@@ -19,7 +19,7 @@ A beautiful, interactive web app to visualize and compare popular sorting algori
 ## 📸 Screenshots
 
 ### Single Algorithm Mode
-![Single Algorithm Mode](./Screenshot%202025-07-11%20at%201.51.30%E2%80%AFAM.png)
+![Single Algorithm Mode]([./public/Screenshot%202025-07-11%20at%201.51.30%E2%80%AFAM.png](https://github.com/Aman-Thakur002/sorting_visualizer_revamped/blob/ff2f6e55e28217d15a2170e1c4574670da2f5243/public/Screenshot%202025-07-11%20at%201.51.30%E2%80%AFAM.png))
 
 ### Compare Mode
 ![Compare Mode](./Screenshot%202025-07-11%20at%201.52.16%E2%80%AFAM.png)
