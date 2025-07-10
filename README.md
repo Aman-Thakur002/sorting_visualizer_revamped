@@ -1,28 +1,43 @@
-# Sorting Visualizer
+# 🚀 Sorting Visualizer
 
-A beautiful, interactive web app to visualize and compare popular sorting algorithms in real time. Built with React and Vite, supporting both light and dark themes, and fully responsive for desktop and mobile.
+<p align="center">
+  <img src="./s1.png" alt="Sorting Visualizer Banner" width="80%"/>
+</p>
+
+<p align="center">
+  <a href="#-features"><img src="https://img.shields.io/badge/Features-6+-purple?style=flat-square" alt="Features"/></a>
+  <a href="#-tech-stack"><img src="https://img.shields.io/badge/Tech%20Stack-React%20%7C%20Vite%20%7C%20CSS3-blue?style=flat-square" alt="Tech Stack"/></a>
+  <a href="#-license"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/></a>
+</p>
 
 ---
 
 ## ✨ Features
-- **Visualize** Bubble, Selection, Insertion, Merge, Quick, and Heap Sort
-- **Compare** two algorithms side-by-side
-- **Step-by-step** animation with color-coded states
-- **Metrics**: See comparisons and swaps in real time
-- **Algorithm info**: Complexity, stability, pros/cons, and more
-- **Code viewer**: See and copy JS, C++, and Python implementations
-- **Dark/Light mode** toggle
-- **Responsive**: Works great on mobile and desktop
+
+- 🎨 **Visualize** Bubble, Selection, Insertion, Merge, Quick, and Heap Sort
+- 🆚 **Compare** two algorithms side-by-side
+- 🌀 **Step-by-step** animation with color-coded states
+- 📊 **Metrics**: See comparisons and swaps in real time
+- 📚 **Algorithm info**: Complexity, stability, pros/cons, and more
+- 💻 **Code viewer**: See and copy JS, C++, and Python implementations
+- 🌗 **Dark/Light mode** toggle
+- 📱 **Responsive**: Works great on mobile and desktop
 
 ---
 
 ## 📸 Screenshots
 
-### Single Algorithm Mode
-![Single Algorithm Mode]([./public/Screenshot%202025-07-11%20at%201.51.30%E2%80%AFAM.png](https://github.com/Aman-Thakur002/sorting_visualizer_revamped/blob/ff2f6e55e28217d15a2170e1c4574670da2f5243/public/Screenshot%202025-07-11%20at%201.51.30%E2%80%AFAM.png))
+<div align="center">
 
-### Compare Mode
-![Compare Mode](./Screenshot%202025-07-11%20at%201.52.16%E2%80%AFAM.png)
+**Single Algorithm Mode**
+
+<img src="./s1.png" alt="Single Algorithm Mode" width="80%"/>
+
+**Compare Mode**
+
+<img src="./s2.png" alt="Compare Mode" width="80%"/>
+
+</div>
 
 ---
 
@@ -55,14 +70,16 @@ A beautiful, interactive web app to visualize and compare popular sorting algori
 ---
 
 ## 🛠️ Tech Stack
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [React Icons](https://react-icons.github.io/react-icons/)
+
+- ⚛️ [React](https://react.dev/)
+- ⚡ [Vite](https://vitejs.dev/)
+- 🎨 [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- 🖼️ [React Icons](https://react-icons.github.io/react-icons/)
 
 ---
 
 ## 📚 Learn More
+
 - [Sorting Algorithms (GeeksforGeeks)](https://www.geeksforgeeks.org/sorting-algorithms/)
 - [React Documentation](https://react.dev/)
 - [Vite Documentation](https://vitejs.dev/)
@@ -70,10 +87,19 @@ A beautiful, interactive web app to visualize and compare popular sorting algori
 ---
 
 ## 🙏 Credits
+
 - Inspired by classic sorting visualizer projects and the open-source community.
 - Icons by [React Icons](https://react-icons.github.io/react-icons/).
 
 ---
 
 ## 📄 License
+
 MIT
+
+---
+
+<p align="center">
+  <b>⭐️ Star this repo if you like it! | Made with ❤️ by Aman Thakur</b>
+</p>
+
