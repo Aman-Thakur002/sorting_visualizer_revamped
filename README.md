@@ -1,7 +1,7 @@
 # 🚀 Sorting Visualizer
 
 <p align="center">
-  <img src="./s1.png" alt="Sorting Visualizer Banner" width="80%"/>
+  <img src="./public/s1.png" alt="Sorting Visualizer Banner" width="80%"/>
 </p>
 
 <p align="center">
