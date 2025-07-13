@@ -583,7 +583,7 @@ const SortingVisualizer = () => {
                 </button>
               </div>
 
-              <div style={{ display: "flex", gap: "20px" }}>
+              <div className="size-speed-controls">
                 {/* Size Control */}
                 <div
                   style={{ display: "flex", alignItems: "center", gap: "10px" }}

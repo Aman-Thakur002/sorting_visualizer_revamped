@@ -667,7 +667,7 @@ body, html {
 .controls-panel {
   display: flex;
   flex-direction: row;
-    justify-content: space-between;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -1718,11 +1718,19 @@ body.dark-theme .array-label {
 
 /* Mobile: Uniform controls, stack vertically */
 @media (max-width: 767px) {
+  .size-speed-controls {
+    display: none !important;
+  }
   .controls-panel {
     flex-direction: column;
     gap: 10px;
-    align-items: stretch;
+    align-items: center;
+      padding : 1em;
   }
+  .controls{
+    display: none;
+  }
+  
   .algorithm-selectors {
     max-width: 100%;
     width: 100%;
